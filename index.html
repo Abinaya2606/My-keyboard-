@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="62966d08-05cb-4476-ae91-96a38a8ab6c0">
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+    <p>Enter your name</p>
+    <input type="text" name="name" required><br>
+    <label for="">Enter your email</label><br>
+    
+    <input type="email" name="email" required>
+    <p>type something.....class=""</p>
+    <textarea name="message" required></textarea>
+
+    <!-- hCaptcha Spam Protection -->
+    <div class="h-captcha" data-captcha="true"></div>
+
+    <button type="submit">Submit Form</button>
+
+</form>
+<!-- Required for hCaptcha -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
+  <script src="main.js"></script>
+</body>
+</html>
